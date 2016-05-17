@@ -1,0 +1,9 @@
+@import "../../_config";
+
+$form-checkbox-background-image: null;
+$form-label-font-color: $light-blue;
+$form-checkbox-glyph-focus-color: $light-blue;
+$form-checkbox-glyph-color: $light-blue;
+$form-checkbox-size: 24px;
+$form-checkbox-glyph: dynamic('\e835' 24px $font-icon-font-family-Material);
+$form-checkbox-checked-glyph: dynamic('\e834' 24px $font-icon-font-family-Material);

@@ -1,0 +1,243 @@
+@import "../../var/_config";
+
+.selected{
+  box-shadow:none !important;
+}
+.x-view-item-focused{
+  outline:none !important;
+}
+.menuItem{
+  color:white;
+  @extend  .z-depth-2;
+  margin: 15px 10px 0px 10px;
+  text-align:center;
+  height:15%;
+  position:relative;
+}
+
+.verticalAlign{
+  position:relative;
+  top:50%;
+  transform: translateY(-50%);
+}
+
+.bg_lightblue{
+  background-color:$light-blue;
+}
+.bg_green{
+  background-color: $green;
+}
+.bg_adminBlue{
+  background-color: $admin-blue;
+}
+.bg_orange{
+  background-color:$orange;
+}
+.bg_blue{
+  background-color: $blue;
+}
+.bg_purple{
+  background-color:$purple;
+}
+.bg_steel{
+  background-color:$steel;
+}
+
+.bg_lightblue:hover{
+  background-color:lighten($light-blue,10%);
+  @extend .z-depth-1;
+}
+.bg_green:hover{
+  background-color:lighten($green,10%);
+  @extend .z-depth-1;
+
+}
+
+.bg_adminBlue:hover{
+  background-color:lighten($admin-blue,10%);
+  @extend .z-depth-1;
+
+}
+
+.bg_orange:hover{
+  background-color:lighten($orange,10%);
+  @extend .z-depth-1;
+
+}
+.bg_blue:hover{
+  background-color:lighten($blue,10%);
+  @extend .z-depth-1;
+
+}
+.bg_purple:hover{
+  background-color:lighten($purple,10%);
+  @extend .z-depth-1;
+
+}
+.bg_steel:hover{
+  background-color:lighten($steel,10%);
+  @extend .z-depth-1;
+
+}
+
+// arrow to the right selected.
+.bg_lightblue.selected:after{
+  left: 100%;
+  top: 50%;
+  border: solid transparent;
+  content: " ";
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none;
+  border-color: rgba(136, 183, 213, 0);
+  border-left-color: lighten($light-blue,10%);
+  border-width: 10px;
+  margin-top: -10px;
+}
+
+.selected.bg_lightblue{
+  background-color:lighten($light-blue,10%);
+  @extend .z-depth-0;
+}
+
+// arrow to the right selected.
+.bg_adminBlue.selected:after{
+  left: 100%;
+  top: 50%;
+  border: solid transparent;
+  content: " ";
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none;
+  border-color: rgba(136, 183, 213, 0);
+  border-left-color: lighten($admin-blue,10%);
+  border-width: 10px;
+  margin-top: -10px;
+}
+
+.selected.bg_adminBlue{
+  background-color:lighten($admin-blue,10%);
+  @extend .z-depth-0;
+}
+
+// arrow to the right selected.
+.bg_green.selected:after{
+  left: 100%;
+  top: 50%;
+  border: solid transparent;
+  content: " ";
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none;
+  border-color: rgba(136, 183, 213, 0);
+  border-left-color: lighten($green,10%);
+  border-width: 10px;
+  margin-top: -10px;
+}
+.selected.bg_green{
+  background-color: lighten($green,10%);
+  @extend .z-depth-0;
+
+}
+
+
+// arrow to the right selected.
+.bg_orange.selected:after{
+  left: 100%;
+  top: 50%;
+  border: solid transparent;
+  content: " ";
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none;
+  border-color: rgba(136, 183, 213, 0);
+  border-left-color: lighten($orange,10%);
+  border-width: 10px;
+  margin-top: -10px;
+}
+.selected.bg_orange{
+  background-color:lighten($orange,10%);
+  @extend .z-depth-0;
+}
+
+// arrow to the right selected.
+.bg_blue.selected:after{
+  left: 100%;
+  top: 50%;
+  border: solid transparent;
+  content: " ";
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none;
+  border-color: rgba(136, 183, 213, 0);
+  border-left-color: lighten($blue,10%);
+  border-width: 10px;
+  margin-top: -10px;
+}
+.selected.bg_blue{
+  background-color: lighten($blue,10%);
+  @extend .z-depth-0;
+}
+
+// arrow to the right selected.
+.bg_purple.selected:after{
+  left: 100%;
+  top: 50%;
+  border: solid transparent;
+  content: " ";
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none;
+  border-color: rgba(136, 183, 213, 0);
+  border-left-color: lighten($purple,10%);
+  border-width: 10px;
+  margin-top: -10px;
+}
+.selected.bg_purple{
+  background-color:lighten($purple,10%);
+  @extend .z-depth-0;
+}
+
+// arrow to the right selected.
+.bg_steel.selected:after{
+  left: 100%;
+  top: 50%;
+  border: solid transparent;
+  content: " ";
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none;
+  border-color: rgba(136, 183, 213, 0);
+  border-left-color: lighten($steel,10%);
+  border-width: 10px;
+  margin-top: -10px;
+}
+.selected.bg_steel{
+  background-color:lighten($steel,10%);
+  @extend .z-depth-0;
+}
+
+
+// report page styles
+
+.purpleFont{
+  color:$purple;
+}
+
+.report{
+  font-size:1.25em !important;
+  width:33%;
+  float:left;
+  padding: 5px;
+}
+
+.report i{
+  padding-right:5px;
+}

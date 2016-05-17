@@ -1,0 +1,63 @@
+@import "../../var/_config";
+
+@include extjs-fieldset-ui(
+  $ui:'purpleHeader',
+  $ui-header-font-size:14px,
+  $ui-header-color:$purple,
+  $ui-header-font-weight:bold,
+  $ui-border-color :$purple
+);
+
+@include extjs-fieldset-ui(
+  $ui: 'greenHeader',
+  $ui-header-font-size:14px,
+  $ui-header-color:$green,
+ // $ui-header-font-weight:bold,
+  $ui-border-color:$green
+);
+
+@include extjs-fieldset-ui(
+    $ui: 'orangeHeader',
+    $ui-header-font-size:14px,
+    $ui-header-color:$orange,
+    $ui-border-color:$orange
+);
+
+.x-fieldset-purpleHeader{
+  background-color:lighten($light-gray-bg,10%);
+}
+
+.x-fieldset-greenHeader{
+  background-color:lighten($light-gray-bg,10%);
+}
+
+.x-fieldset-orangeHeader{
+  background-color:lighten($light-gray-bg,10%);
+}
+
+
+.greenField .x-tool-img {
+  color:$green;
+  opacity:1.0;
+  margin-left:5px
+}
+
+.redField .x-tool-img{
+  color:red;
+  opacity: 1.0;
+  margin-left:5px;
+  margin-right:5px;
+}
+
+.redTool .x-tool-img{
+  color:red;
+  opacity: 1.0;
+  margin-top:7px;
+}
+
+
+.orangeField .x-tool-img {
+  color:$orange;
+  opacity:1.0;
+  margin-left:5px
+}

@@ -1,0 +1,6 @@
+
+@import "../../var/_config";
+
+@include extjs-tab-panel-ui(
+  $ui:'topLevelPanel'
+);

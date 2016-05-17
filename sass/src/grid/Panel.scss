@@ -1,0 +1,55 @@
+@import "../../var/_config";
+
+@include extjs-panel-ui(
+  $ui:'lightBlueGrid',
+  $ui-header-background-color: $light-blue
+);
+.x-panel-lightBlueGrid{
+  @extend .z-depth-1;
+}
+
+@include extjs-panel-ui(
+  $ui: 'greenGrid',
+  $ui-header-background-color:$green
+);
+
+.x-panel-greenGrid{
+  @extend .z-depth-1;
+}
+
+@include extjs-panel-ui(
+  $ui: 'orangeGrid',
+  $ui-header-background-color:$orange
+);
+
+.x-panel-orangeGrid{
+  @extend .z-depth-1;
+}
+
+@include extjs-panel-ui(
+  $ui: 'adminBlueGrid',
+  $ui-header-background-color:$admin-blue
+);
+
+.x-panel-adminBlueGrid{
+  @extend .z-depth-1;
+}
+
+@include extjs-panel-ui(
+        $ui:'blueGrid',
+        $ui-header-background-color: $blue
+);
+
+.x-panel-blueGrid{
+  @extend .z-depth-1;
+}
+
+.x-panel-blueGrid{
+  .x-grid-row-expander{
+    color:$blue;
+  }
+
+  .x-grid-checkcolumn{
+    color:$blue;
+  }
+}

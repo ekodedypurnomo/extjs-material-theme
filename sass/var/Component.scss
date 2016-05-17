@@ -1,0 +1,16 @@
+// global variables, You can find these in the API_Docs by searching for Global_CSS.
+@import "_config";
+
+$font-family: Roboto; sans-serif !default;
+$font-weight: 400 !default;
+$font-weight-bold: 500 !default;
+$font-size:14px !default;
+
+$include-ie: false !default;
+$css-shadow-border-radius:0px; // square everything.
+$enable-font-icons:true;
+
+$font-icon-font-family-Material: dynamic(Material Icons);
+
+// dirty glyph override
+$grid-cell-dirty-glyph: dynamic('\f12a' 14px $font-icon-font-family);

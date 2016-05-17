@@ -1,0 +1,205 @@
+@import '../../var/_config';
+
+.x-btn-material-raised-colored-large{
+  -webkit-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+  -moz-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12)
+}
+
+.largeIcon{
+  font-size:24px;
+}
+
+@include extjs-button-large-ui(
+    $ui: 'material-raised-colored',
+    $background-gradient:null,
+    $background-color: lighten($light-blue,40%),
+    $color: $blue,
+    $color-over: darken($blue,30%)
+);
+@include extjs-button-medium-ui(
+        $ui: 'material-raised-colored',
+        $background-gradient:null,
+        $background-color: lighten($light-blue,40%),
+        $color: $blue,
+        $color-over: darken($blue,30%)
+);
+
+
+@include extjs-button-large-ui(
+    $ui: 'material-raised-colored-green',
+    $background-gradient:null,
+    $background-color: lighten($green,40%),
+    $color: white,
+    $color-over: darken($green,30%)
+);
+
+@include extjs-button-large-ui(
+  $ui: 'material-raised-colored-darkGreen',
+  $background-gradient:null,
+  $background-color: $green,
+  $color: white
+);
+
+@include extjs-button-large-ui(
+    $ui: 'material-raised-colored-orange',
+    $background-gradient:null,
+    $background-color: lighten($orange,20%),
+    $color: white,
+    $color-over: darken($orange,30%)
+);
+
+
+@include extjs-button-large-ui(
+        $ui: 'material-raised-colored-blue',
+        $background-gradient:null,
+        $background-color: lighten($blue,20%),
+        $color: white,
+        $color-over: darken($blue,30%)
+);
+
+@include extjs-button-large-ui(
+        $ui: 'material-raised-colored-adminBlue',
+        $background-gradient:null,
+        $background-color: lighten($admin-blue,20%),
+        $color: white,
+        $color-over: darken($admin-blue,30%)
+);
+
+@include extjs-button-large-ui(
+  $ui: 'header-button',
+  $background-gradient:null,
+  $background-color: transparent,
+  $color: white,
+  $color-over: $light-blue,
+  $glyph-color:white,
+  $glyph-font-size: 24px
+);
+
+@include extjs-button-small-ui(
+  $ui: 'tabGreenButton',
+  $background-gradient:null,
+  $background-color:transparent,
+  //$background-color:lighten($green,10%),
+  $glyph-color:$green
+);
+
+@include extjs-button-small-ui(
+  $ui: 'tabOrangeButton',
+  $background-gradient:null,
+  $background-color:transparent,
+  $glyph-color:$orange
+);
+
+@include extjs-button-small-ui(
+  $ui: 'tabLightBlueButton',
+  $background-gradient:null,
+  $background-color:transparent,
+  $glyph-color:$light-blue
+);
+
+@include extjs-button-small-ui(
+        $ui: 'tabAdminBlueButton',
+        $background-gradient:null,
+        $background-color:transparent,
+        $glyph-color:$admin-blue
+);
+
+@include extjs-button-medium-ui(
+    $ui: 'tabGreenButton',
+    $background-gradient:null,
+    $glyph-color:$green,
+    $background-color-over:lighten($green,30%),
+    $background-color-pressed: $green,
+    $color-over:white
+);
+
+@include extjs-button-medium-ui(
+  $ui: 'tabOrangeButton',
+  $background-gradient:null,
+  $glyph-color:$orange,
+  $background-color-over:lighten($orange,30%),
+  $color-over:white,
+  $background-color-pressed: $orange
+);
+
+@include extjs-button-medium-ui(
+  $ui: 'tabLightBlueButton',
+  $background-gradient:null,
+  $glyph-color:$light-blue,
+  $background-color-over:lighten($light-blue,30%),
+  $color-over:white,
+  $background-color-pressed: $light-blue
+);
+
+@include extjs-button-medium-ui(
+        $ui: 'tabAdminBlueButton',
+        $background-gradient:null,
+        $glyph-color:$admin-blue,
+        $background-color-over:lighten($admin-blue,30%),
+        $color-over:white,
+        $background-color-pressed: $admin-blue
+);
+
+@include extjs-button-medium-ui(
+        $ui: 'orangeField',
+        $background-gradient:null,
+        $glyph-color:$orange,
+        $background-color-over:lighten($orange,30%),
+        $color-over:white,
+        $background-color-pressed: $orange
+);
+
+@include extjs-button-medium-ui(
+        $ui: 'adminBlueField',
+        $background-gradient:null,
+        $glyph-color:$admin-blue,
+        $background-color-over:lighten($admin-blue,30%),
+        $color-over:white,
+        $background-color-pressed: $admin-blue
+);
+//glyph fixes for buttons on mouseover.
+.x-btn-tabGreenButton-medium:hover .x-btn-icon-el{
+  color:white;
+}
+
+.x-btn-tabOrangeButton-medium:hover .x-btn-icon-el{
+   color:white;
+ }
+.x-btn-tabAdminBlueButton-medium:hover .x-btn-icon-el{
+  color:white;
+}
+
+
+/* small button styles */
+@include extjs-button-small-ui(
+  $ui: 'material-raised-colored-darkGreen',
+  $background-gradient:null,
+  $background-color: $green,
+  $color: white,
+  $glyph-color:white
+);
+
+@include extjs-button-small-ui(
+        $ui: 'material-raised-colored-adminBlue',
+        $background-gradient:null,
+        $background-color: $admin-blue,
+        $color: white,
+        $glyph-color:white
+);
+
+
+
+@include extjs-button-small-ui(
+    $ui: 'greenTextButton',
+    $color: $green,
+    $glyph-color:$green
+);
+
+@include extjs-button-small-ui(
+  $ui: 'material-raised-colored',
+  $background-gradient:null,
+  $background-color: lighten($light-blue,40%),
+  $color: $blue,
+  $color-over: darken($blue,30%)
+);

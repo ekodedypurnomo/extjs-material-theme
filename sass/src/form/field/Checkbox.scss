@@ -1,0 +1,55 @@
+@import '../../../var/_config';
+
+/*
+.x-form-checkbox{
+  font-family: 'Material Icons' !important;
+  width: 24px !important;
+  height:24px !important;
+  font: 24px/1 'Material Icons' !important;
+}
+*/
+
+@include extjs-checkbox-ui(
+  $ui: 'greenField',
+  $ui-checkbox-glyph-color:$green,
+  $ui-checkbox-glyph-focus-color:$green,
+  $ui-label-color:$green
+);
+.x-form-cb-label-greenField{
+  color:$green;
+}
+
+@include extjs-checkbox-ui(
+    $ui: 'orangeField',
+    $ui-checkbox-glyph-color:$orange,
+    $ui-checkbox-glyph-focus-color:$orange,
+    $ui-label-color:$orange
+);
+.x-form-cb-label-orangeField{
+  color:$orange;
+}
+
+@include extjs-checkbox-ui(
+    $ui: 'purpleField',
+    $ui-checkbox-glyph-color:$purple,
+    $ui-checkbox-glyph-focus-color:$purple,
+    $ui-label-color:$purple
+);
+
+@include extjs-checkbox-ui(
+    $ui: 'blueField',
+    $ui-checkbox-glyph-color:$blue,
+    $ui-checkbox-glyph-focus-color:$blue,
+    $ui-label-color:$blue
+);
+
+@include extjs-checkbox-ui(
+        $ui: 'adminBlueField',
+        $ui-checkbox-glyph-color:$admin-blue,
+        $ui-checkbox-glyph-focus-color:$admin-blue,
+        $ui-label-color:$admin-blue
+);
+
+.x-form-cb-label-adminBlueField{
+  color:$admin-blue;
+}

@@ -1,0 +1,24 @@
+@import "../../var/_config";
+
+.x-menu-default{
+  @extend .z-depth-2;
+}
+
+.x-menu-default:after{
+  @extend .z-depth-2;
+  bottom: 100%;
+  left: 50%;
+  border: solid transparent;
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none;
+  border-color: rgba(136, 183, 213, 0);
+  border-bottom-color: #88b7d5;
+  border-width: 30px;
+  margin-left: -30px;
+}
+
+.x-menu-item-text-default.x-menu-item-indent-no-separator{
+  margin-right:26px;
+}

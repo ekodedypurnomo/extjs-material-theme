@@ -1,0 +1,6 @@
+@import "../Component";
+
+$menu-item-font-size:12px;
+$menu-item-checkbox-glyph: dynamic('\e835' 13px $font-icon-font-family-Material);
+$menu-item-checkbox-checked-glyph: dynamic('\e834' 13px $font-icon-font-family-Material);
+$menu-item-checkbox-glyph-color: #888;

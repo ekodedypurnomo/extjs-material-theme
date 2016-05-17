@@ -1,0 +1,610 @@
+@import '../../../var/_config';
+
+html {
+    font-size: 15px;
+}
+
+.x-form-date-trigger:before{
+    content: "\f073" !important;
+}
+
+
+
+// special input elements with animations.
+.specialBlueField {
+    .x-form-type-text,
+    .x-form-type-password {
+        position: relative;
+        margin-top: 17px
+    }
+
+    .x-form-trigger-default {
+        color: $light-blue;
+        background-color: transparent;
+    }
+}
+
+.specialBlueField.x-form-type-text .x-form-item-label,
+.specialBlueField.x-form-type-password .x-form-item-label {
+    position: absolute;
+    top: 8px;
+    height: 22px;
+    color: $light-blue;
+    font-size: 15px;
+    line-height: 1.5;
+    -webkit-transition: -webkit-all ease-out;
+    -webkit-transition-delay: 0s;
+    -moz-transition: -moz-all ease-out;
+    -o-transition: -o-all ease-out;
+    transition: all 0s ease-out 0s;
+}
+
+.specialBlueField.x-form-type-text.x-field-focus .x-form-item-label,
+.specialBlueField.x-form-type-text.not-empty .x-form-item-label,
+.specialBlueField.x-form-type-password.x-field-focus .x-form-item-label,
+.specialBlueField.x-form-type-password.not-empty .x-form-item-label,
+.specialBlueField.x-form-type-combobox.not-empty .x-form-item-label {
+    font-size: 12px;
+    -webkit-transform: translateY(-22px);
+    -moz-transform: translateY(-22px);
+    -ms-transform: translateY(-22px);
+    -o-transform: translateY(-22px);
+    transform: translateY(-22px)
+}
+
+.specialBlueField.x-form-type-text.x-field-focus .x-form-item-label,
+.specialBlueField.x-form-type-password.x-field-focus .x-form-item-label {
+    color: $light-blue;
+}
+
+.specialBlueField.x-form-type-text.x-field-focus .x-form-item-label,
+.specialBlueField.x-form-type-text.had-focus .x-form-item-label,
+.specialBlueField.x-form-type-password.x-field-focus .x-form-item-label,
+.specialBlueField.x-form-type-password.had-focus .x-form-item-label {
+    -webkit-transition-duration: 0.2s;
+    -moz-transition-duration: 0.2s;
+    -o-transition-duration: 0.2s;
+    transition-duration: 0.2s
+}
+
+.specialBlueField.x-form-type-text.x-field-focus .x-form-text-default,
+.specialBlueField.x-form-type-password.x-field-focus .x-form-text-default {
+    border-bottom: 1px solid $light-blue;
+    -webkit-box-shadow: 0 1px 0 0 $light-blue;
+    -moz-box-shadow: 0 1px 0 0 $light-blue;
+    box-shadow: 0 1px 0 0 $light-blue;
+}
+
+.specialBlueField .x-form-text-default {
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid #9e9e9e;
+    outline: none;
+    height: 3rem;
+    width: 100%;
+    font-size: 1rem;
+    margin: 0 0 15px 0;
+    padding: 0;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+    -webkit-box-sizing: content-box;
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -o-transition: 0.3s;
+    -ms-transition: 0.3s;
+    transition: 0.3s
+}
+
+.specialBlueField .x-form-text-default,
+.specialBlueField .x-form-text-default.x-form-textarea {
+    line-height: 1.5;
+    padding: 8px 0
+}
+
+.specialBlueField .x-form-trigger-wrap-default {
+    border: none
+}
+
+.x-webkit .specialBlueField .x-form-text {
+    height: calc(100% - 21px)
+}
+
+.specialBlueField .x-form-item-label-default.x-form-item-label-top > .x-form-item-label-inner {
+    padding: 0
+}
+
+.specialBlueField .x-form-item-label-default {
+    padding: 0
+}
+
+.specialBlueField .x-form-text-field-body-default {
+    min-width: 0 !important;
+    max-width: none
+}
+
+.specialBlueField .x-form-item-body {
+    display: block
+}
+
+.specialBlueField .x-message-box .x-window-item {
+    padding: 0 22px 22px !important
+}
+
+.specialBlueField .x-message-box .x-window-item .x-window-text {
+    color: rgba(0, 0, 0, 0.54)
+}
+
+.specialBlueField .x-form-type-checkbox .x-form-cb-default {
+    margin-top: 7px;
+    margin-left: 8px
+}
+
+//special green ones.
+.specialGreenField {
+    .x-form-type-text,
+    .x-form-type-password {
+        position: relative;
+        margin-top: 17px
+    }
+
+    .x-form-trigger-default {
+        color: $green;
+        background-color: transparent;
+    }
+}
+
+.specialGreenField.x-form-type-text .x-form-item-label,
+.specialGreenField.x-form-type-password .x-form-item-label {
+    position: absolute;
+    top: 8px;
+    height: 22px;
+    color: $green;
+    font-size: 15px;
+    line-height: 1.5;
+    -webkit-transition: -webkit-all ease-out;
+    -webkit-transition-delay: 0s;
+    -moz-transition: -moz-all ease-out;
+    -o-transition: -o-all ease-out;
+    transition: all 0s ease-out 0s;
+}
+
+.specialGreenField.x-form-type-text.x-field-focus .x-form-item-label,
+.specialGreenField.x-form-type-text.not-empty .x-form-item-label,
+.specialGreenField.x-form-type-password.x-field-focus .x-form-item-label,
+.specialGreenField.x-form-type-password.not-empty .x-form-item-label,
+.specialGreenField.x-form-type-combobox.not-empty .x-form-item-label {
+    font-size: 12px;
+    -webkit-transform: translateY(-22px);
+    -moz-transform: translateY(-22px);
+    -ms-transform: translateY(-22px);
+    -o-transform: translateY(-22px);
+    transform: translateY(-22px)
+}
+
+.specialGreenField.x-form-type-text.x-field-focus .x-form-item-label,
+.specialGreenField.x-form-type-password.x-field-focus .x-form-item-label {
+    color: $green;
+}
+
+.specialGreenField.x-form-type-text.x-field-focus .x-form-item-label,
+.specialGreenField.x-form-type-text.had-focus .x-form-item-label,
+.specialGreenField.x-form-type-password.x-field-focus .x-form-item-label,
+.specialGreenField.x-form-type-password.had-focus .x-form-item-label {
+    -webkit-transition-duration: 0.2s;
+    -moz-transition-duration: 0.2s;
+    -o-transition-duration: 0.2s;
+    transition-duration: 0.2s
+}
+
+.specialGreenField.x-form-type-text.x-field-focus .x-form-text-default,
+.specialGreenField.x-form-type-password.x-field-focus .x-form-text-default {
+    border-bottom: 1px solid $green;
+    -webkit-box-shadow: 0 1px 0 0 $green;
+    -moz-box-shadow: 0 1px 0 0 $green;
+    box-shadow: 0 1px 0 0 $green;
+}
+
+.specialGreenField .x-form-text-default {
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid #9e9e9e;
+    outline: none;
+    height: 3rem;
+    width: 100%;
+    font-size: 1rem;
+    margin: 0 0 15px 0;
+    padding: 0;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+    -webkit-box-sizing: content-box;
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -o-transition: 0.3s;
+    -ms-transition: 0.3s;
+    transition: 0.3s
+}
+
+.specialGreenField .x-form-text-default,
+.specialGreenField .x-form-text-default.x-form-textarea {
+    line-height: 1.5;
+    padding: 8px 0
+}
+
+.specialGreenField .x-form-trigger-wrap-default {
+    border: none
+}
+
+.x-webkit .specialGreenField .x-form-text {
+    height: calc(100% - 21px)
+}
+
+.specialGreenField .x-form-item-label-default.x-form-item-label-top > .x-form-item-label-inner {
+    padding: 0
+}
+
+.specialGreenField .x-form-item-label-default {
+    padding: 0
+}
+
+.specialGreenField .x-form-text-field-body-default {
+    min-width: 0 !important;
+    max-width: none
+}
+
+.specialGreenField .x-form-item-body {
+    display: block
+}
+
+.specialGreenField .x-message-box .x-window-item {
+    padding: 0 22px 22px !important
+}
+
+.specialGreenField .x-message-box .x-window-item .x-window-text {
+    color: rgba(0, 0, 0, 0.54)
+}
+
+.specialGreenField .x-form-type-checkbox .x-form-cb-default {
+    margin-top: 7px;
+    margin-left: 8px
+}
+
+// special admin-blue fields
+.specialAdminAdminBlueField {
+    .x-form-type-text,
+    .x-form-type-password {
+        position: relative;
+        margin-top: 17px
+    }
+
+    .x-form-trigger-default {
+        color: $admin-blue;
+        background-color: transparent;
+    }
+}
+
+.specialAdminAdminBlueField.x-form-type-text .x-form-item-label,
+.specialAdminAdminBlueField.x-form-type-password .x-form-item-label {
+    position: absolute;
+    top: 8px;
+    height: 22px;
+    color: $admin-blue;
+    font-size: 15px;
+    line-height: 1.5;
+    -webkit-transition: -webkit-all ease-out;
+    -webkit-transition-delay: 0s;
+    -moz-transition: -moz-all ease-out;
+    -o-transition: -o-all ease-out;
+    transition: all 0s ease-out 0s;
+}
+
+.specialAdminBlueField.x-form-type-text.x-field-focus .x-form-item-label,
+.specialAdminBlueField.x-form-type-text.not-empty .x-form-item-label,
+.specialAdminBlueField.x-form-type-password.x-field-focus .x-form-item-label,
+.specialAdminBlueField.x-form-type-password.not-empty .x-form-item-label,
+.specialAdminBlueField.x-form-type-combobox.not-empty .x-form-item-label {
+    font-size: 12px;
+    -webkit-transform: translateY(-22px);
+    -moz-transform: translateY(-22px);
+    -ms-transform: translateY(-22px);
+    -o-transform: translateY(-22px);
+    transform: translateY(-22px)
+}
+
+.specialAdminBlueField.x-form-type-text.x-field-focus .x-form-item-label,
+.specialAdminBlueField.x-form-type-password.x-field-focus .x-form-item-label {
+    color: $admin-blue;
+}
+
+.specialAdminBlueField.x-form-type-text.x-field-focus .x-form-item-label,
+.specialAdminBlueField.x-form-type-text.had-focus .x-form-item-label,
+.specialAdminBlueField.x-form-type-password.x-field-focus .x-form-item-label,
+.specialAdminBlueField.x-form-type-password.had-focus .x-form-item-label {
+    -webkit-transition-duration: 0.2s;
+    -moz-transition-duration: 0.2s;
+    -o-transition-duration: 0.2s;
+    transition-duration: 0.2s
+}
+
+.specialAdminBlueField.x-form-type-text.x-field-focus .x-form-text-default,
+.specialAdminBlueField.x-form-type-password.x-field-focus .x-form-text-default {
+    border-bottom: 1px solid $admin-blue;
+    -webkit-box-shadow: 0 1px 0 0 $admin-blue;
+    -moz-box-shadow: 0 1px 0 0 $admin-blue;
+    box-shadow: 0 1px 0 0 $admin-blue;
+}
+
+.specialAdminBlueField .x-form-text-default {
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid #9e9e9e;
+    outline: none;
+    height: 3rem;
+    width: 100%;
+    font-size: 1rem;
+    margin: 0 0 15px 0;
+    padding: 0;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+    -webkit-box-sizing: content-box;
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -o-transition: 0.3s;
+    -ms-transition: 0.3s;
+    transition: 0.3s
+}
+
+.specialAdminBlueField .x-form-text-default,
+.specialAdminBlueField .x-form-text-default.x-form-textarea {
+    line-height: 1.5;
+    padding: 8px 0
+}
+
+.specialAdminBlueField .x-form-trigger-wrap-default {
+    border: none
+}
+
+.x-webkit .specialAdminBlueField .x-form-text {
+    height: calc(100% - 21px)
+}
+
+.specialAdminBlueField .x-form-item-label-default.x-form-item-label-top > .x-form-item-label-inner {
+    padding: 0
+}
+
+.specialAdminBlueField .x-form-item-label-default {
+    padding: 0
+}
+
+.specialAdminBlueField .x-form-text-field-body-default {
+    min-width: 0 !important;
+    max-width: none
+}
+
+.specialAdminBlueField .x-form-item-body {
+    display: block
+}
+
+.specialAdminBlueField .x-message-box .x-window-item {
+    padding: 0 22px 22px !important
+}
+
+.specialAdminBlueField .x-message-box .x-window-item .x-window-text {
+    color: rgba(0, 0, 0, 0.54)
+}
+
+.specialAdminBlueField .x-form-type-checkbox .x-form-cb-default {
+    margin-top: 7px;
+    margin-left: 8px
+}
+
+
+//special orange fields
+
+.specialOrangeField {
+    .x-form-type-text,
+    .x-form-type-password {
+        position: relative;
+        margin-top: 17px
+    }
+
+    .x-form-trigger-default {
+        color: $orange;
+        background-color: transparent;
+    }
+
+    .x-form-item-label{
+        color: $orange;
+    }
+}
+
+.specialOrangeField.x-form-type-text .x-form-item-label,
+.specialOrangeField.x-form-type-password .x-form-item-label {
+    position: absolute;
+    top: 8px;
+    height: 22px;
+    color: $orange;
+    font-size: 15px;
+    line-height: 1.5;
+    -webkit-transition: -webkit-all ease-out;
+    -webkit-transition-delay: 0s;
+    -moz-transition: -moz-all ease-out;
+    -o-transition: -o-all ease-out;
+    transition: all 0s ease-out 0s;
+}
+
+.specialOrangeField.x-form-type-text.x-field-focus .x-form-item-label,
+.specialOrangeField.x-form-type-text.not-empty .x-form-item-label,
+.specialOrangeField.x-form-type-password.x-field-focus .x-form-item-label,
+.specialOrangeField.x-form-type-password.not-empty .x-form-item-label,
+.specialOrangeField.x-form-type-combobox.not-empty .x-form-item-label {
+    font-size: 12px;
+    -webkit-transform: translateY(-22px);
+    -moz-transform: translateY(-22px);
+    -ms-transform: translateY(-22px);
+    -o-transform: translateY(-22px);
+    transform: translateY(-22px)
+}
+
+.specialOrangeField.x-form-type-text.x-field-focus .x-form-item-label,
+.specialOrangeField.x-form-type-password.x-field-focus .x-form-item-label {
+    color: $orange;
+}
+
+.specialOrangeField.x-form-type-text.x-field-focus .x-form-item-label,
+.specialOrangeField.x-form-type-text.had-focus .x-form-item-label,
+.specialOrangeField.x-form-type-password.x-field-focus .x-form-item-label,
+.specialOrangeField.x-form-type-password.had-focus .x-form-item-label {
+    -webkit-transition-duration: 0.2s;
+    -moz-transition-duration: 0.2s;
+    -o-transition-duration: 0.2s;
+    transition-duration: 0.2s
+}
+
+.specialOrangeField.x-form-type-text.x-field-focus .x-form-text-default,
+.specialOrangeField.x-form-type-password.x-field-focus .x-form-text-default {
+    border-bottom: 1px solid $orange;
+    -webkit-box-shadow: 0 1px 0 0 $orange;
+    -moz-box-shadow: 0 1px 0 0 $orange;
+    box-shadow: 0 1px 0 0 $orange;
+}
+
+.specialOrangeField .x-form-text-default {
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid #9e9e9e;
+    outline: none;
+    height: 3rem;
+    width: 100%;
+    font-size: 1rem;
+    margin: 0 0 15px 0;
+    padding: 0;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+    -webkit-box-sizing: content-box;
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -o-transition: 0.3s;
+    -ms-transition: 0.3s;
+    transition: 0.3s
+}
+
+.specialOrangeField .x-form-text-default,
+.specialOrangeField .x-form-text-default.x-form-textarea {
+    line-height: 1.5;
+    padding: 8px 0
+}
+
+.specialOrangeField .x-form-trigger-wrap-default {
+    border: none
+}
+
+.x-webkit .specialOrangeField .x-form-text {
+    height: calc(100% - 21px)
+}
+
+.specialOrangeField .x-form-item-label-default.x-form-item-label-top > .x-form-item-label-inner {
+    padding: 0
+}
+
+.specialOrangeField .x-form-item-label-default {
+    padding: 0
+}
+
+.specialOrangeField .x-form-text-field-body-default {
+    min-width: 0 !important;
+    max-width: none
+}
+
+.specialOrangeField .x-form-item-body {
+    display: block
+}
+
+.specialOrangeField .x-message-box .x-window-item {
+    padding: 0 22px 22px !important
+}
+
+.specialOrangeField .x-message-box .x-window-item .x-window-text {
+    color: rgba(0, 0, 0, 0.54)
+}
+
+.specialOrangeField .x-form-type-checkbox .x-form-cb-default {
+    margin-top: 7px;
+    margin-left: 8px
+}
+
+@include extjs-text-field-ui(
+    $ui: 'greenField',
+    $ui-focus-border-color:$green,
+    $ui-trigger-glyph-color :$green
+);
+
+@include extjs-label-ui(
+    $ui: 'greenField',
+    $ui-font-color: $green
+);
+//green label class.
+.greenField{
+    color:$green
+};
+
+// orange label class.
+.orangeField{
+    color:$orange
+}
+
+@include extjs-text-field-ui(
+    $ui: 'orangeField',
+    $ui-focus-border-color:$orange,
+    $ui-trigger-glyph-color :$orange
+);
+
+@include extjs-label-ui(
+    $ui: 'orangeField',
+    $ui-font-color: $orange
+);
+
+@include extjs-text-field-ui(
+        $ui: 'adminBlueField',
+        $ui-focus-border-color:$admin-blue,
+        $ui-trigger-glyph-color :$admin-blue
+);
+
+@include extjs-label-ui(
+        $ui: 'adminBlueField',
+        $ui-font-color: $admin-blue
+);
+
+// admin-blue label class.
+.adminBlueField{
+    color:$admin-blue
+}
+
+
+//light blue field
+@include extjs-text-field-ui(
+        $ui: 'lightBlueField',
+        $ui-focus-border-color:$light-blue,
+        $ui-trigger-glyph-color :$light-blue
+);
+
+@include extjs-label-ui(
+        $ui: 'lightBlueField',
+        $ui-font-color: $light-blue
+);
+
+//light blue label class.
+.lightBlueField{
+    color:$light-blue
+};

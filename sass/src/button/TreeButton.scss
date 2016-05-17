@@ -1,0 +1,528 @@
+/*
+@import '../../var/_config';
+
+!*green button configuration *!
+
+@include extjs-button-small-ui(
+  $ui: 'greenTreeButton',
+  $background-color: $green,
+  $color: white,
+  $glyph-color:white,
+  $arrow-glyph-color:white,
+  $background-color-over: $light-gray-bg,
+  $color-over:$green,
+  $split-line-color: white
+);
+
+@include extjs-button-medium-ui(
+  $ui: 'greenTreeButton',
+  $background-color: $green,
+  $color: white,
+  $glyph-color:white,
+  $arrow-glyph-color:white,
+  $background-color-over: $light-gray-bg,
+  $color-over:$green,
+  $split-line-color: white
+);
+
+@include extjs-button-large-ui(
+  $ui: 'greenTreeButton',
+  $background-color: $green,
+  $color: white,
+  $glyph-color:white,
+  $arrow-glyph-color:white,
+  $background-color-over: $light-gray-bg,
+  $color-over:$green,
+  $split-line-color: white
+);
+
+!** css for mouseover of glyph colors *!
+[class*='x-btn-greenTreeButton'].x-btn-over{
+  .x-btn-icon-el{
+    color:$green !important;
+  }
+  .x-btn-split-right:after{ // split button icon color on hover
+    color:$green;
+  }
+}
+
+!* css for button value selected and nothing under it *!
+
+@include extjs-button-small-ui(
+  $ui: 'greenTreeButton',
+  $background-color: $green,
+  $color: white,
+  $glyph-color:white,
+  $arrow-glyph-color:white,
+  $background-color-over: $light-gray-bg,
+  $color-over:$green,
+  $split-line-color: white
+);
+
+@include extjs-button-medium-ui(
+  $ui: 'greenTreeButton',
+  $background-color: $green,
+  $color: white,
+  $glyph-color:white,
+  $arrow-glyph-color:white,
+  $background-color-over: $light-gray-bg,
+  $color-over:$green,
+  $split-line-color: white
+);
+
+@include extjs-button-large-ui(
+  $ui: 'greenTreeButton',
+  $background-color: $green,
+  $color: white,
+  $glyph-color:white,
+  $arrow-glyph-color:white,
+  $background-color-over: $light-gray-bg,
+  $color-over:$green,
+  $split-line-color: white
+);
+
+!** css for mouseover of glyph colors *!
+[class*='x-btn-greenTreeButton'].x-btn-over{
+  .x-btn-icon-el{
+    color:$green !important;
+  }
+  .x-btn-split-right:after{ // split button icon color on hover
+    color:$green;
+  }
+}
+
+!* inverse green (light w/ green text ) *!
+@include extjs-button-small-ui(
+    $ui: 'greenTextTreeButton',
+    $background-color: $light-gray-bg,
+    $color: $green,
+    $glyph-color:$green,
+    $arrow-glyph-color:$green,
+    $background-color-over: $green,
+    $color-over:white,
+    $split-line-width: 0px,
+    $split-line-color: $green
+);
+
+@include extjs-button-medium-ui(
+    $ui: 'greenTextTreeButton',
+    $background-color: $light-gray-bg,
+    $color: $green,
+    $glyph-color:$green,
+    $arrow-glyph-color:$green,
+    $background-color-over: $green,
+    $color-over:white,
+    $split-line-width: 0px,
+    $split-line-color: $green
+);
+
+@include extjs-button-large-ui(
+    $ui: 'greenTextTreeButton',
+    $background-color: $light-gray-bg,
+    $color: $green,
+    $glyph-color:$green,
+    $arrow-glyph-color:$green,
+    $background-color-over: $green,
+    $color-over:white,
+    $split-line-width: 0px,
+    $split-line-color: $green
+);
+
+!*css for mouseover of glyph colors *!
+[class*='x-btn-greenTextTreeButton'].x-btn-over{
+  .x-btn-icon-el{
+    color:white !important;
+  }
+  .x-btn-split-right:after { // split button icon color on hover
+    color: white;
+  }
+}
+
+!* light blue button *!
+
+@include extjs-button-small-ui(
+    $ui: 'lightBlueTreeButton',
+    $background-color: $light-blue,
+    $color: white,
+    $glyph-color:white,
+    $arrow-glyph-color:white,
+    $background-color-over: $light-gray-bg,
+    $color-over:$light-blue,
+    $split-line-width: 0px,
+    $split-line-color: white
+);
+
+@include extjs-button-medium-ui(
+    $ui: 'lightBlueTreeButton',
+    $background-color: $light-blue,
+    $color: white,
+    $glyph-color:white,
+    $arrow-glyph-color:white,
+    $background-color-over: $light-gray-bg,
+    $color-over:$light-blue,
+    $split-line-width: 0px,
+    $split-line-color: white
+);
+
+@include extjs-button-large-ui(
+    $ui: 'lightBlueTreeButton',
+    $background-color: $light-blue,
+    $color: white,
+    $glyph-color:white,
+    $arrow-glyph-color:white,
+    $background-color-over: $light-gray-bg,
+    $color-over:$light-blue,
+    $split-line-width: 0px,
+    $split-line-color: white
+);
+
+!* css for mouseover of glyph colors *!
+[class*='x-btn-lightBlueTreeButton'].x-btn-over{
+  .x-btn-icon-el{
+    color:$light-blue !important;
+  }
+  .x-btn-split-right:after{ // split button icon color on hover
+    color:$light-blue;
+  }
+}
+
+!* inverse light blue (light w/ light blue text ) *!
+
+@include extjs-button-small-ui(
+  $ui: 'lightBlueTextTreeButton',
+  $background-color: $light-gray-bg,
+  $color: $light-blue,
+  $glyph-color:$light-blue,
+  $arrow-glyph-color:$light-blue,
+  $background-color-over: $light-blue,
+  $color-over:white,
+  $split-line-width: 0px,
+  $split-line-color: $light-blue
+);
+
+@include extjs-button-medium-ui(
+  $ui: 'lightBlueTextTreeButton',
+  $background-color: $light-gray-bg,
+  $color: $light-blue,
+  $glyph-color:$light-blue,
+  $arrow-glyph-color:$light-blue,
+  $background-color-over: $light-blue,
+  $color-over:white,
+  $split-line-width: 0px,
+  $split-line-color: $light-blue
+);
+
+@include extjs-button-large-ui(
+  $ui: 'lightBlueTextTreeButton',
+  $background-color: $light-gray-bg,
+  $color: $light-blue,
+  $glyph-color:$light-blue,
+  $arrow-glyph-color:$light-blue,
+  $background-color-over: $light-blue,
+  $color-over:white,
+  $split-line-width: 0px,
+  $split-line-color: $light-blue
+);
+
+!* css for mouseover of glyph colors *!
+[class*='x-btn-lightBlueTextTreeButton'].x-btn-over{
+  .x-btn-icon-el{
+    color:white !important;
+  }
+  .x-btn-split-right:after{ // split button icon color on hover
+    color:white;
+  }
+  .x-btn-wrap.x-btn-split-right > .x-btn-button:after{
+    border-right: 1px solid white !important;
+  }
+}
+
+!* orange button *!
+
+@include extjs-button-small-ui(
+  $ui: 'orangeTreeButton',
+  $background-color: $orange,
+  $color: white,
+  $glyph-color:white,
+  $arrow-glyph-color:white,
+  $background-color-over: $light-gray-bg,
+  $color-over:$orange,
+  $split-line-width: 0px,
+  $split-line-color: white
+);
+
+@include extjs-button-medium-ui(
+  $ui: 'orangeTreeButton',
+  $background-color: $orange,
+  $color: white,
+  $glyph-color:white,
+  $arrow-glyph-color:white,
+  $background-color-over: $light-gray-bg,
+  $color-over:$orange,
+  $split-line-width: 0px,
+  $split-line-color: white
+);
+
+@include extjs-button-large-ui(
+  $ui: 'orangeTreeButton',
+  $background-color: $orange,
+  $color: white,
+  $glyph-color:white,
+  $arrow-glyph-color:white,
+  $background-color-over: $light-gray-bg,
+  $color-over:$orange,
+  $split-line-width: 0px,
+  $split-line-color: white
+);
+
+!* css for mouseover of glyph colors *!
+[class*='x-btn-orangeTreeButton'].x-btn-over{
+  .x-btn-icon-el{
+    color:$orange !important;
+  }
+  .x-btn-split-right:after{ // split button icon color on hover
+    color:$orange;
+  }
+  .x-btn-wrap.x-btn-split-right > .x-btn-button:after{
+    border-right: 1px solid $orange !important;
+  }
+}
+
+!* inverse orange(light w/ orange text ) *!
+
+@include extjs-button-small-ui(
+  $ui: 'orangeTextTreeButton',
+  $background-color: $light-gray-bg,
+  $color: $orange,
+  $glyph-color:$orange,
+  $arrow-glyph-color:$orange,
+  $background-color-over: $orange,
+  $color-over:white,
+  $split-line-width: 0px,
+  $split-line-color: $orange
+);
+
+@include extjs-button-medium-ui(
+  $ui: 'orangeTextTreeButton',
+  $background-color: $light-gray-bg,
+  $color: $orange,
+  $glyph-color:$orange,
+  $arrow-glyph-color:$orange,
+  $background-color-over: $orange,
+  $color-over:white,
+  $split-line-width: 0px,
+  $split-line-color: $orange
+);
+
+@include extjs-button-large-ui(
+  $ui: 'orangeTextTreeButton',
+  $background-color: $light-gray-bg,
+  $color: $orange,
+  $glyph-color:$orange,
+  $arrow-glyph-color:$orange,
+  $background-color-over: $orange,
+  $color-over:white,
+  $split-line-width: 0px,
+  $split-line-color: $orange
+);
+
+!* css for mouseover of glyph colors *!
+[class*='x-btn-orangeTextTreeButton'].x-btn-over{
+  .x-btn-icon-el{
+    color:white !important;
+  }
+  .x-btn-split-right:after{ // split button icon color on hover
+    color:white;
+  }
+}
+
+!* blue button *!
+@include extjs-button-small-ui(
+  $ui: 'blueTreeButton',
+  $background-color: $blue,
+  $color: white,
+  $glyph-color:white,
+  $arrow-glyph-color:white,
+  $background-color-over: $light-gray-bg,
+  $color-over:$blue,
+  $split-line-width: 0px,
+  $split-line-color: white
+);
+
+@include extjs-button-medium-ui(
+  $ui: 'blueTreeButton',
+  $background-color: $blue,
+  $color: white,
+  $glyph-color:white,
+  $arrow-glyph-color:white,
+  $background-color-over: $light-gray-bg,
+  $color-over:$blue,
+  $split-line-width: 0px,
+  $split-line-color: white
+);
+
+@include extjs-button-large-ui(
+  $ui: 'blueTreeButton',
+  $background-color: $blue,
+  $color: white,
+  $glyph-color:white,
+  $arrow-glyph-color:white,
+  $background-color-over: $light-gray-bg,
+  $color-over:$blue,
+  $split-line-width: 0px,
+  $split-line-color: white
+);
+
+!* css for mouseover of glyph colors *!
+[class*='x-btn-blueTreeButton'].x-btn-over{
+  .x-btn-icon-el{
+    color:$blue !important;
+  }
+  .x-btn-split-right:after{ // split button icon color on hover
+    color:$blue;
+  }
+}
+
+!* inverse orange(light w/ orange text ) *!
+
+@include extjs-button-small-ui(
+  $ui: 'blueTextTreeButton',
+  $background-color: $light-gray-bg,
+  $color: $blue,
+  $glyph-color:$blue,
+  $arrow-glyph-color:$blue,
+  $background-color-over: $blue,
+  $color-over:white,
+  $split-line-width: 0px,
+  $split-line-color: $blue
+);
+
+@include extjs-button-medium-ui(
+  $ui: 'blueTextTreeButton',
+  $background-color: $light-gray-bg,
+  $color: $blue,
+  $glyph-color:$blue,
+  $arrow-glyph-color:$blue,
+  $background-color-over: $blue,
+  $color-over:white,
+  $split-line-width: 0px,
+  $split-line-color: $blue
+);
+
+@include extjs-button-large-ui(
+  $ui: 'blueTextTreeButton',
+  $background-color: $light-gray-bg,
+  $color: $blue,
+  $glyph-color:$blue,
+  $arrow-glyph-color:$blue,
+  $background-color-over: $blue,
+  $color-over:white,
+  $split-line-width: 0px,
+  $split-line-color: $blue
+);
+
+!* css for mouseover of glyph colors *!
+[class*='x-btn-blueTextTreeButton'].x-btn-over{
+  .x-btn-icon-el{
+    color:white !important;
+  }
+  .x-btn-split-right:after{ // split button icon color on hover
+    color:white;
+  }
+}
+
+!* purple button *!
+
+@include extjs-button-small-ui(
+  $ui: 'purpleTreeButton',
+  $background-color: $purple,
+  $color: white,
+  $glyph-color:white,
+  $arrow-glyph-color:white,
+  $background-color-over: $light-gray-bg,
+  $color-over:$purple,
+  $split-line-width: 1px,
+  $split-line-color: white
+);
+
+@include extjs-button-medium-ui(
+  $ui: 'purpleTreeButton',
+  $background-color: $purple,
+  $color: white,
+  $glyph-color:white,
+  $arrow-glyph-color:white,
+  $background-color-over: $light-gray-bg,
+  $color-over:$purple,
+  $split-line-width: 1px,
+  $split-line-color: white
+);
+
+@include extjs-button-large-ui(
+  $ui: 'purpleTreeButton',
+  $background-color: $purple,
+  $color: white,
+  $glyph-color:white,
+  $arrow-glyph-color:white,
+  $background-color-over: $light-gray-bg,
+  $color-over:$purple,
+  $split-line-width: 1px,
+  $split-line-color: white
+);
+
+!* css for mouseover of glyph colors *!
+[class*='x-btn-purpleTreeButton'].x-btn-over{
+  .x-btn-icon-el{
+    color:$purple !important;
+  }
+  .x-btn-split-right:after{ // split button icon color on hover
+    color:$purple;
+  }
+}
+
+!* inverse purple(light w/ purple text ) *!
+
+@include extjs-button-small-ui(
+  $ui: 'purpleTextTreeButton',
+  $background-color: $light-gray-bg,
+  $color: $purple,
+  $glyph-color:$purple,
+  $arrow-glyph-color:$purple,
+  $background-color-over: $purple,
+  $color-over:white,
+  $split-line-width: 1px,
+  $split-line-color: $purple
+);
+
+@include extjs-button-medium-ui(
+  $ui: 'purpleTextTreeButton',
+  $background-color: $light-gray-bg,
+  $color: $purple,
+  $glyph-color:$purple,
+  $arrow-glyph-color:$purple,
+  $background-color-over: $purple,
+  $color-over:white,
+  $split-line-width: 1px,
+  $split-line-color: $purple
+);
+
+@include extjs-button-large-ui(
+  $ui: 'purpleTextTreeButton',
+  $background-color: $light-gray-bg,
+  $color: $purple,
+  $glyph-color:$purple,
+  $arrow-glyph-color:$purple,
+  $background-color-over: $purple,
+  $color-over:white,
+  $split-line-width: 1px,
+  $split-line-color: $purple
+);
+
+!* css for mouseover of glyph colors *!
+[class*='x-btn-purpleTextTreeButton'].x-btn-over{
+  .x-btn-icon-el{
+    color:white !important;
+  }
+  .x-btn-split-right:after{ // split button icon color on hover
+    color:white;
+  }
+}*/

@@ -1,0 +1,20 @@
+@import "../../var/_config";
+.darkHeader{
+  background-color:$dark-title-bg;
+  color:white; // font color
+  @extend  .z-depth-1;
+}
+
+.greenFont{
+  color:$green;
+}
+
+.mainContainer{
+  background-color:$light-gray-bg;
+}
+
+.boxShadow{
+  @extend .z-depth-1;
+  //background-color:$steel;
+}
+

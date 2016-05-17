@@ -1,0 +1,35 @@
+@import "../../var/_config";
+.headerLogo{
+  color:$light-blue;
+  font-size:32px;
+  padding-left: 30px;
+  //padding-top: 20px;
+}
+
+.userName{
+  color: ghostwhite;
+  padding-right:15px;
+}
+
+.headerInfoLabel{
+  padding-top:10px;
+  padding-left:10px;
+}
+
+.headerInfoLabel b{
+  color: darken($light-blue,20%);
+  padding-right:10px;
+}
+
+.floatLeft{
+  float:left;
+}
+
+.item-selector:hover{
+  cursor:pointer;
+}
+
+// For label item next to Objectives on Issues
+.orangeLabel{
+  color:$orange;
+}

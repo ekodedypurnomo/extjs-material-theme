@@ -1,0 +1,10 @@
+
+@import '../../../var/_config';
+@include extjs-text-field-ui(
+  $ui: 'materialcb',
+  $ui-trigger-glyph-color:$light-blue
+);
+
+.x-form-text-wrap-materialcb{
+  @extend .x-form-text;
+}

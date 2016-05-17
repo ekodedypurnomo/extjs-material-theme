@@ -1,0 +1,5 @@
+@import "../../Component";
+
+$grid-header-menu-sort-asc-glyph: dynamic('\e5D8' 16px $font-icon-font-family-Material);
+$grid-header-menu-sort-desc-glyph: dynamic('\e5DB' 16px $font-icon-font-family-Material);
+$grid-header-menu-columns-glyph: dynamic('\f0db' 16px $font-icon-font-family);

@@ -1,0 +1,17 @@
+@import "../../var/_config";
+
+@include extjs-window-ui(
+  $ui: 'greenWindow',
+  $ui-header-padding:8px,
+
+
+  $ui-padding:5px,
+  $ui-border-radius: 1px,
+  $ui-header-background-color: $green,
+  $ui-header-color: white,
+  $ui-border-color:transparent
+);
+
+.x-window-greenWindow{
+  @extend .z-depth-2;
+}

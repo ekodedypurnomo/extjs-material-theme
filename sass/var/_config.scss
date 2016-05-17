@@ -1,0 +1,104 @@
+// base configuration sheet. For example, base colors, font face, etc.
+
+// font face.
+@include google-webfont(Roboto, '400,500');
+
+// material design iconic font.
+$md-font-path: 'fonts';
+$md-version: '1.1.1';
+
+@font-face {
+  font-family: 'Material Icons';
+  font-weight: 400;
+  font-style: normal;
+  src: url('#{$md-font-path}/MaterialIcons-Regular.eot');
+  src: local('Material Icons'),
+  local('MaterialIcons-Regular'),
+    url('#{$md-font-path}/MaterialIcons-Regular.woff2') format('woff2'),
+    url('#{$md-font-path}/MaterialIcons-Regular.woff') format('woff'),
+    url('#{$md-font-path}/MaterialIcons-Regular.ttf') format('truetype');
+}
+
+.material-icons{
+  font-family: 'Material Icons';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;  /* Preferred icon size */
+  display: inline-block;
+  line-height: 1;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  direction: ltr;
+
+  /* Support for all WebKit browsers. */
+  -webkit-font-smoothing: antialiased;
+  /* Support for Safari and Chrome. */
+  text-rendering: optimizeLegibility;
+
+  /* Support for Firefox. */
+  -moz-osx-font-smoothing: grayscale;
+
+  /* Support for IE. */
+  font-feature-settings: 'liga';
+}
+
+// drop shadow configs.
+.z-depth-1 {
+  @include box-shadow(0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12));
+}
+
+.z-depth-1-half {
+  @include box-shadow(0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15));
+}
+
+.z-depth-2 {
+   @include box-shadow(0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19));
+ }
+
+.z-depth-2-dark {
+  @include box-shadow(0 8px 17px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.49));
+}
+
+.z-depth-3 {
+  @include box-shadow(0 12px 15px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19));
+}
+
+.z-depth-4 {
+  @include box-shadow(0 16px 28px 0 rgba(0, 0, 0, 0.22), 0 25px 55px 0 rgba(0, 0, 0, 0.21));
+}
+
+.z-depth-5 {
+  @include box-shadow(0 27px 24px 0 rgba(0, 0, 0, 0.2), 0 40px 77px 0 rgba(0, 0, 0, 0.22));
+}
+
+.z-depth-0{
+  //box-shadow:none !important;
+  // @include box-shadow(0 0px 0px 0 rgba(0,0,0,0), 0 0px, 0px, 0 rgba(0,0,0,0)); !important;
+}
+
+
+
+$dark-title-bg: #121d23; // color of header & footer.
+$light-gray-bg: #dedede; // base color of background of page.
+
+// button colors.
+$light-blue:#0bb3ce;
+$green: #4a803b;
+$orange: #d55a1e;
+$blue: #164781;
+$purple: #440b52;
+$steel: #88959e;
+//$admin-blue: #1482ab;
+$admin-blue: #0087B1;
+
+$font-size: 14px !default;
+
+.hidden{
+  display: none !important;
+}
+
+.x-action-col-icon{
+  margin-right:10px;
+}

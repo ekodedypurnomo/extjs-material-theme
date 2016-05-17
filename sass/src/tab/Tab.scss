@@ -1,0 +1,214 @@
+@import "../../var/_config";
+
+
+// white tab panel.
+
+@include extjs-tab-ui(
+  $ui: 'whiteTabs',
+  $ui-closable-icon-glyph-color:white,
+  $ui-closable-icon-glyph-color-active:$steel,
+
+  $ui-plain-closable-icon-glyph-color: $light-blue,
+  $ui-plain-closable-icon-glyph-color-over: darken($light-blue,10%),
+  $ui-plain-closable-icon-glyph-color-active: $blue,
+
+  $ui-background-color:$light-blue,
+  $ui-background-color-active:white,
+
+  $ui-plain-background-color:transparent,
+  $ui-plain-background-color-active:white,
+  //remove hover colors
+  $ui-background-color-over:transparent,
+  $ui-border-color-over:transparent,
+  $ui-border-color-focus: transparent,
+
+  $ui-color:white,
+  $ui-color-over:$blue,
+
+  $ui-plain-color: $light-blue,
+  $ui-plain-color-over: darken($light-blue,10%),
+  $ui-plain-color-active: $blue
+);
+
+
+.x-tab-whiteTabs.x-tab-active{
+  @extend .z-depth-2;
+}
+
+.x-tab-whiteTabs-focus{
+  @extend .z-depth-2;
+}
+
+.x-tab-whiteTabs-top.x-tab-focus.x-tab-active{
+  @extend  .z-depth-3;
+}
+
+
+// tab panel with green selected tabs.
+@include extjs-tab-ui(
+  $ui: 'greenTabs',
+  $ui-closable-icon-glyph-color:$green,
+  $ui-closable-icon-glyph-color-active:$steel,
+
+  $ui-background-color:lighten($green,20%),
+  $ui-background-color-active:$green,
+
+    //remove hover colors
+  $ui-background-color-over:lighten($green,20%),
+  $ui-border-color-over:transparent,
+  $ui-border-color-focus: transparent,
+
+  $ui-color:white,
+  $ui-color-active:white,
+  $ui-color-over:white,
+
+  $ui-glyph-color: white,
+  $ui-glyph-color-active: white,
+  $ui-closable-icon-glyph-color: white,
+  $ui-closable-icon-glyph-color-active: white
+);
+
+@include extjs-tab-bar-ui(
+  $ui: 'greenTabs',
+  $ui-background-color:$light-gray-bg,
+  $ui-strip-background-color:$green
+);
+
+.x-tab-greenTabs.x-tab-active{
+  @extend .z-depth-2;
+}
+
+.x-tab-greenTabs-focus{
+  @extend .z-depth-2;
+}
+
+.x-tab-greenTabs-top.x-tab-focus.x-tab-active{
+  @extend  .z-depth-3;
+}
+
+
+// tab panel with orange selected tabs.
+@include extjs-tab-ui(
+    $ui: 'orangeTabs',
+    $ui-closable-icon-glyph-color:white,
+    $ui-closable-icon-glyph-color-active:white,
+
+    $ui-background-color:lighten($orange,20%),
+    $ui-background-color-active:$orange,
+
+      //remove hover colors
+    $ui-background-color-over:lighten($orange,20%),
+    $ui-border-color-over:transparent,
+    $ui-border-color-focus: transparent,
+
+    $ui-color:white,
+    $ui-color-active:white,
+    $ui-color-over:white,
+
+    $ui-glyph-color: white,
+    $ui-glyph-color-active: white
+);
+
+@include extjs-tab-bar-ui(
+        $ui: 'orangeTabs',
+        $ui-background-color:$light-gray-bg,
+        $ui-strip-background-color:$orange
+);
+
+.x-tab-orangeTabs.x-tab-active{
+  @extend .z-depth-2;
+}
+
+.x-tab-orangeTabs-focus{
+  @extend .z-depth-2;
+}
+
+.x-tab-orangeTabs-top.x-tab-focus.x-tab-active{
+  @extend  .z-depth-3;
+}
+
+
+
+// tab panel with blue selected tabs.
+@include extjs-tab-ui(
+        $ui: 'blueTabs',
+        $ui-closable-icon-glyph-color:$blue,
+        $ui-closable-icon-glyph-color-active:$steel,
+
+        $ui-background-color:lighten($blue,20%),
+        $ui-background-color-active:$blue,
+
+          //remove hover colors
+        $ui-background-color-over:lighten($blue,20%),
+        $ui-border-color-over:transparent,
+        $ui-border-color-focus: transparent,
+
+        $ui-color:white,
+        $ui-color-active:white,
+        $ui-color-over:white,
+
+        $ui-glyph-color: white,
+        $ui-glyph-color-active: white,
+        $ui-closable-icon-glyph-color: white,
+        $ui-closable-icon-glyph-color-active: white
+);
+
+@include extjs-tab-bar-ui(
+        $ui: 'blueTabs',
+        $ui-background-color:$light-gray-bg,
+        $ui-strip-background-color:$blue
+);
+
+.x-tab-greenTabs.x-tab-active{
+  @extend .z-depth-2;
+}
+
+.x-tab-greenTabs-focus{
+  @extend .z-depth-2;
+}
+
+.x-tab-greenTabs-top.x-tab-focus.x-tab-active{
+  @extend  .z-depth-3;
+}
+
+// tab panel with admin-blue selected tabs.
+@include extjs-tab-ui(
+        $ui: 'adminBlueTabs',
+        $ui-closable-icon-glyph-color:white,
+        $ui-closable-icon-glyph-color-active:white,
+
+        $ui-background-color:lighten($admin-blue,20%),
+        $ui-background-color-active:$admin-blue,
+
+          //remove hover colors
+        $ui-background-color-over:lighten($admin-blue,20%),
+        $ui-border-color-over:transparent,
+        $ui-border-color-focus: transparent,
+
+        $ui-color:white,
+        $ui-color-active:white,
+        $ui-color-over:white,
+
+        $ui-glyph-color: white,
+        $ui-glyph-color-active: white
+);
+
+@include extjs-tab-bar-ui(
+        $ui: 'adminBlueTabs',
+        $ui-background-color:$light-gray-bg,
+        $ui-strip-background-color:$admin-blue
+);
+
+.x-tab-adminBlueTabs.x-tab-active{
+  @extend .z-depth-2;
+}
+
+.x-tab-adminBlueTabs-focus{
+  @extend .z-depth-2;
+}
+
+.x-tab-adminBlueTabs-top.x-tab-focus.x-tab-active{
+  @extend  .z-depth-3;
+}
+
+

@@ -1,0 +1,115 @@
+@import "../../var/_config";
+
+@include extjs-panel-ui(
+  $ui: 'bluesteel',
+  $ui-header-color:white,
+  $ui-header-background-color:$light-blue,
+  $ui-body-background-color:$light-gray-bg
+);
+
+
+.x-panel-bluesteel{
+  @extend .z-depth-1;
+}
+
+@include extjs-panel-ui(
+  $ui: 'purplePanel',
+  $ui-header-color:white,
+  $ui-header-background-color:$purple
+);
+
+@include extjs-panel-ui(
+  $ui: 'lightBlue',
+  $ui-header-color:white,
+  $ui-header-background-color:$light-blue
+);
+
+@include extjs-panel-ui(
+  $ui: 'greenPanel',
+  $ui-header-color:white,
+  $ui-header-background-color:$green
+);
+
+@include extjs-panel-ui(
+        $ui: 'adminBluePanel',
+        $ui-header-color:white,
+        $ui-header-background-color:$admin-blue
+);
+
+@include extjs-panel-ui(
+    $ui: 'greenPanelDrawer',
+    $ui-header-color:white,
+    $ui-header-background-color:$green
+);
+
+@include extjs-panel-ui(
+  $ui:"grayPanel-framed",
+  $ui-border-color: darken($light-gray-bg,10%),
+  $ui-body-background-color:lighten($light-gray-bg,10%)
+);
+
+
+@include extjs-panel-ui(
+  $ui: "orangePanel-framed",
+  $ui-border-color:$orange,
+  $ui-body-background-color:white,
+  $ui-header-background-color:$orange
+);
+
+@include extjs-panel-ui(
+  $ui: "factPanel-selectedPanel",
+  $ui-body-background-color:darken($light-gray-bg,15%) !important,
+  $ui-border-width:2px,
+  $ui-border-color:lighten($green,20%)
+  /*$ui-border-radius:1px,
+  $ui-border-color:black*/
+);
+
+.x-panel-factPanel-selectedPanel{
+  @extend .z-depth-1-half;
+}
+
+
+.x-panel-greenPanelDrawer{
+  @extend  .z-depth-2;
+}
+
+.x-panel-grayPanel-framed{
+  @extend .z-depth-1;
+}
+
+.x-panel-factPanel{
+  @extend  .z-depth-1;
+}
+
+.x-panel-lightBlue{
+  @extend  .z-depth-1;
+}
+
+.x-title-text-orangeField{
+  text-align: center;
+  color:$orange;
+  font-weight:bold;
+  letter-spacing:1px;
+}
+
+.x-title-text-adminBlueField{
+  text-align: center;
+  color:$admin-blue;
+  font-weight:bold;
+  letter-spacing:1px;
+}
+
+
+.x-panel-grayPanel-framed{
+  .x-mask-msg-text{
+    background-image: none !important;
+  }
+}
+
+@include extjs-panel-ui(
+  $ui: "selectedPanel",
+  $ui-body-background-color:lighten($light-gray-bg,10%),
+  $ui-border-width:1px,
+  $ui-border-color:lighten($green,20%)
+);

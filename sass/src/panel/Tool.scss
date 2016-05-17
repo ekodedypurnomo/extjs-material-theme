@@ -1,0 +1,7 @@
+.x-header .x-tool-excel{
+  background-image:none !important;
+  font: 16px/1 FontAwesome;
+}
+.x-header  .x-tool-excel:before{
+  content: "\f1c3" !important;
+}

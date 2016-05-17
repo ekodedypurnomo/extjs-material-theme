@@ -1,0 +1,160 @@
+@import '../../var/_config';
+
+/*.x-tree-checkbox{
+  font-family: 'Material Icons' !important;
+  font: 24px/1 'Material Icons' !important;
+  width: 24px !important;
+  height:24px !important;
+}*/
+
+.x-boundlist-greenField {
+  .x-tree-checkbox {
+    color: $green;
+  }
+  .x-tree-icon {
+    color: $green;
+  }
+  .x-tree-node-text{
+    color:$green;
+  }
+  .x-tree-icon:before{
+    content:'';
+  }
+  .x-tree-icon{
+    width:0px;
+  }
+  .x-tree-elbow-img{
+    color:$green;
+  }
+
+}
+
+
+.x-boundlist-orangeField {
+  .x-tree-checkbox {
+    color: $orange;
+  }
+  .x-tree-icon {
+    color: $orange;
+  }
+  .x-tree-node-text{
+    color:$orange;
+  }
+  .x-tree-icon:before{
+    content:'';
+  }
+  .x-tree-icon{
+    width:0px;
+  }
+  .x-tree-elbow-img{
+    color:$orange;
+  }
+
+}
+
+.noIcon{
+  .x-tree-icon { display: none !important; };
+}
+
+
+@include extjs-panel-ui(
+  $ui: 'orangePanel',
+  $ui-header-background-color:$orange,
+  $ui-tool-glyph-color:white,
+  $ui-header-glyph-opacity: 1
+);
+
+/* orange tree styles */
+.x-panel-orangePanel {
+  .x-tool-img{
+    opacity:1 !important;
+  }
+  .x-grid-checkcolumn{
+    color:$orange;
+  }
+  .x-grid-checkcolumn:before{
+    color:$orange;
+  }
+  .x-tree-checkbox {
+    color: $orange;
+  }
+  .x-tree-icon {
+    color: $orange;
+  }
+  .x-tree-node-text{
+    color:$orange;
+  }
+  .x-tree-icon:before{
+    content:'';
+  }
+  .x-tree-icon{
+    width:0px;
+  }
+  .x-tree-elbow-img{
+    color:$orange;
+  }
+
+},
+
+
+.x-boundlist-adminBlueField {
+  .x-tree-checkbox {
+    color: $admin-blue;
+  }
+  .x-tree-icon {
+    color: $admin-blue;
+  }
+  .x-tree-node-text{
+    color:$admin-blue;
+  }
+  .x-tree-icon:before{
+    content:'';
+  }
+  .x-tree-icon{
+    width:0px;
+  }
+  .x-tree-elbow-img{
+    color:$admin-blue;
+  }
+
+}
+
+
+@include extjs-panel-ui(
+        $ui: 'adminBluePanel',
+        $ui-header-background-color:$admin-blue,
+        $ui-tool-glyph-color:white,
+        $ui-header-glyph-opacity: 1
+);
+
+/* adminBlue tree styles */
+.x-panel-adminBluePanel {
+  .x-tool-img{
+    opacity:1 !important;
+  }
+  .x-grid-checkcolumn{
+    color:$admin-blue;
+  }
+  .x-grid-checkcolumn:before{
+    color:$admin-blue;
+}
+  .x-tree-checkbox {
+    color:$admin-blue;
+  }
+  .x-tree-icon {
+    color: $admin-blue;
+  }
+  .x-tree-node-text{
+    color:$admin-blue;
+  }
+  .x-tree-icon:before{
+    content:'';
+  }
+  .x-tree-icon{
+    width:0px;
+  }
+  .x-tree-elbow-img{
+    color:$admin-blue;
+  }
+
+}
